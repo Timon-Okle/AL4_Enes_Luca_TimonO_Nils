@@ -1,23 +1,239 @@
 <!DOCTYPE html>
-<html lang="de">
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4380/4380133.png">
-<link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meine Website</title>
+<title>elnt.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.elntschools.com/elntcss/4/elnt.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
 <body>
-  <!-- Navbar -->
-  <div class="navbar">
-    <a class="active" href="#">Startseite</a>
-    <a href="#">Über uns</a>
-    <a href="#">Kontakt</a>
+
+<!-- Navbar -->
+<div class="elnt-top">
+  <div class="elnt-bar elnt-black elnt-card">
+    <a class="elnt-bar-item elnt-button elnt-padding-large elnt-hide-medium elnt-hide-large elnt-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="elnt-bar-item elnt-button elnt-padding-large">HOME</a>
+    <a href="#band" class="elnt-bar-item elnt-button elnt-padding-large elnt-hide-small">BAND</a>
+    <a href="#tour" class="elnt-bar-item elnt-button elnt-padding-large elnt-hide-small">TOUR</a>
+    <a href="#contact" class="elnt-bar-item elnt-button elnt-padding-large elnt-hide-small">CONTACT</a>
+    <div class="elnt-dropdown-hover elnt-hide-small">
+      <button class="elnt-padding-large elnt-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="elnt-dropdown-content elnt-bar-block elnt-card-4">
+        <a href="#" class="elnt-bar-item elnt-button">Merchandise</a>
+        <a href="#" class="elnt-bar-item elnt-button">Extras</a>
+        <a href="#" class="elnt-bar-item elnt-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="elnt-padding-large elnt-hover-red elnt-hide-small elnt-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="elnt-bar-block elnt-black elnt-hide elnt-hide-large elnt-hide-medium elnt-top" style="margin-top:46px">
+  <a href="#band" class="elnt-bar-item elnt-button elnt-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="elnt-bar-item elnt-button elnt-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="elnt-bar-item elnt-button elnt-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="elnt-bar-item elnt-button elnt-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="elnt-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides elnt-display-container elnt-center">
+    <img src="/elntimages/la.jpg" style="width:100%">
+    <div class="elnt-display-bottommiddle elnt-container elnt-text-white elnt-padding-32 elnt-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides elnt-display-container elnt-center">
+    <img src="/elntimages/ny.jpg" style="width:100%">
+    <div class="elnt-display-bottommiddle elnt-container elnt-text-white elnt-padding-32 elnt-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides elnt-display-container elnt-center">
+    <img src="/elntimages/chicago.jpg" style="width:100%">
+    <div class="elnt-display-bottommiddle elnt-container elnt-text-white elnt-padding-32 elnt-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
   </div>
 
-  <!-- Hauptinhalt -->
-  <div class="content">
-    <h1>Willkommen auf meiner Website</h1>
-    <p>Hier finden Sie alle Informationen, die Sie benötigen.</p>
+  <!-- The Band Section -->
+  <div class="elnt-container elnt-content elnt-center elnt-padding-64" style="max-width:800px" id="band">
+    <h2 class="elnt-wide">THE BAND</h2>
+    <p class="elnt-opacity"><i>We love music</i></p>
+    <p class="elnt-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="elnt-row elnt-padding-32">
+      <div class="elnt-third">
+        <p>Name</p>
+        <img src="/elntimages/bandmember.jpg" class="elnt-round elnt-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="elnt-third">
+        <p>Name</p>
+        <img src="/elntimages/bandmember.jpg" class="elnt-round elnt-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="elnt-third">
+        <p>Name</p>
+        <img src="/elntimages/bandmember.jpg" class="elnt-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
   </div>
+
+  <!-- The Tour Section -->
+  <div class="elnt-black" id="tour">
+    <div class="elnt-container elnt-content elnt-padding-64" style="max-width:800px">
+      <h2 class="elnt-wide elnt-center">TOUR DATES</h2>
+      <p class="elnt-opacity elnt-center"><i>Remember to book your tickets!</i></p><br>
+
+      <ul class="elnt-ul elnt-border elnt-white elnt-text-grey">
+        <li class="elnt-padding">September <span class="elnt-tag elnt-red elnt-margin-left">Sold out</span></li>
+        <li class="elnt-padding">October <span class="elnt-tag elnt-red elnt-margin-left">Sold out</span></li>
+        <li class="elnt-padding">November <span class="elnt-badge elnt-right elnt-margin-right">3</span></li>
+      </ul>
+
+      <div class="elnt-row-padding elnt-padding-32" style="margin:0 -16px">
+        <div class="elnt-third elnt-margin-bottom">
+          <img src="/elntimages/newyork.jpg" alt="New York" style="width:100%" class="elnt-hover-opacity">
+          <div class="elnt-container elnt-white">
+            <p><b>New York</b></p>
+            <p class="elnt-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="elnt-button elnt-black elnt-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="elnt-third elnt-margin-bottom">
+          <img src="/elntimages/paris.jpg" alt="Paris" style="width:100%" class="elnt-hover-opacity">
+          <div class="elnt-container elnt-white">
+            <p><b>Paris</b></p>
+            <p class="elnt-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="elnt-button elnt-black elnt-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="elnt-third elnt-margin-bottom">
+          <img src="/elntimages/sanfran.jpg" alt="San Francisco" style="width:100%" class="elnt-hover-opacity">
+          <div class="elnt-container elnt-white">
+            <p><b>San Francisco</b></p>
+            <p class="elnt-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="elnt-button elnt-black elnt-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="elnt-modal">
+    <div class="elnt-modal-content elnt-animate-top elnt-card-4">
+      <header class="elnt-container elnt-teal elnt-center elnt-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="elnt-button elnt-teal elnt-xlarge elnt-display-topright">×</span>
+        <h2 class="elnt-wide"><i class="fa fa-suitcase elnt-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="elnt-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="elnt-input elnt-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="elnt-input elnt-border" type="text" placeholder="Enter email">
+        <button class="elnt-button elnt-block elnt-teal elnt-padding-16 elnt-section elnt-right">PAY <i class="fa fa-check"></i></button>
+        <button class="elnt-button elnt-red elnt-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="elnt-right">Need <a href="#" class="elnt-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="elnt-container elnt-content elnt-padding-64" style="max-width:800px" id="contact">
+    <h2 class="elnt-wide elnt-center">CONTACT</h2>
+    <p class="elnt-opacity elnt-center"><i>Fan? Drop a note!</i></p>
+    <div class="elnt-row elnt-padding-32">
+      <div class="elnt-col m6 elnt-large elnt-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="elnt-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="elnt-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="elnt-half">
+              <input class="elnt-input elnt-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="elnt-half">
+              <input class="elnt-input elnt-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="elnt-input elnt-border" type="text" placeholder="Message" required name="Message">
+          <button class="elnt-button elnt-black elnt-section elnt-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="/elntimages/map.jpg" class="elnt-image elnt-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="elnt-container elnt-padding-64 elnt-center elnt-opacity elnt-light-grey elnt-xlarge">
+  <i class="fa fa-facebook-official elnt-hover-opacity"></i>
+  <i class="fa fa-instagram elnt-hover-opacity"></i>
+  <i class="fa fa-snapchat elnt-hover-opacity"></i>
+  <i class="fa fa-pinterest-p elnt-hover-opacity"></i>
+  <i class="fa fa-twitter elnt-hover-opacity"></i>
+  <i class="fa fa-linkedin elnt-hover-opacity"></i>
+  <p class="elnt-medium">Powered by <a href="https://www.elntschools.com/elntcss/default.asp" target="_blank">elnt.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("elnt-show") == -1) {
+    x.className += " elnt-show";
+  } else { 
+    x.className = x.className.replace(" elnt-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
