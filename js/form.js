@@ -48,23 +48,19 @@ submitButton.addEventListener("click", async (event) => {
 
 
 const validateForm = () => {
+  
   const email = emailField.value;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
   const phone = phoneField.value;
   const firstName = firstnameField.value;
   const lastName = lastnameField.value;
-
-  const errorMessage = document.getElementById("error-message"); // Assuming you have an element with id "error-message" to display the error message
-
-  if (email === "" || !emailRegex.test(email) || firstName === "" || lastName === "") {
-    errorMessage.innerText = "Please fill in a valid name, prename, and email.";
+ 
+  if (email === "" || !emailRegex.test(email) || phone === "" ||firstName === "" ||lastName === "") {
     submitButton.disabled = true;
   } else {
-    errorMessage.innerText = "";
     submitButton.disabled = false;
   }
 }
-
 
 // (3) Interaktionen Code
 
