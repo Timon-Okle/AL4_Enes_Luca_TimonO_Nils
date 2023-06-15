@@ -1,0 +1,181 @@
+.grid-container-index-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 35vh;
+}
+.grid-item-sitetitel {
+  grid-column: span 2;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+#textContainer {
+  opacity: 0;
+  transition: opacity 3s;
+  color: white;
+}
+#textContainer.visible {
+  opacity: 1;
+}
+.grid-item-sitetitel a {
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #F24DFF;
+  letter-spacing: 0;
+  transition: letter-spacing 0.5s;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.grid-item-sitetitel a:hover {
+  letter-spacing: 2px;
+}
+.grid-item-sitetitel a:last-child {
+  margin-right: 0;
+}
+.link-sitetitel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item-headimage {
+  grid-column: span 2;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item-headimage img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+.grid-item-saletitel {
+  padding-top: 10px;
+  grid-column: span 2;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.grid-item-saletitel a {
+  font-size: 20px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #F24DFF;
+  letter-spacing: 0;
+  transition: letter-spacing 0.5s;
+  margin-top: 2%;
+}
+.grid-item-saletitel a:hover {
+  letter-spacing: 2px;
+}
+.grid-item-saleimage {
+  grid-column: span 2;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-item-saleimage img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+.grid-container-cocktails {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 2vw;
+  padding: 0px 30px 100px 30px;
+}
+.grid-item-cocktails {
+  position: relative;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.3);
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.background-image1 {
+  background-image: url("../images/RetroQueen.jpg");
+  background-size: cover;
+}
+.background-image2 {
+  background-image: url("../images/WonderWoman.jpg");
+  background-size: cover;
+}
+.background-image3 {
+  background-image: url("../images/SkinnyBitch.jpg");
+  background-size: cover;
+}
+.grid-item-cocktails{
+  display: flex;
+  justify-content: center;
+ /* Horizontally center the content */
+  align-items: center;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  padding: 15%;
+}
+.grid-item-cocktails:hover .background-image {
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+.grid-item-cocktails:hover .text-cocktail{
+  opacity: 0;
+}
+.grid-item-cocktails:hover .readmore-button {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+.text-cocktail {
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+}
+.readmore-button {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #F24DFF;
+  border-color: #F24DFF;
+}
+@media (max-width: 1000px) {
+  .grid-container-cocktails{
+      grid-template-columns: 1fr;
+ }
+}

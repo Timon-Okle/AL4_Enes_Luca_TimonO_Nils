@@ -1,0 +1,39 @@
+.grid-recepis-sub-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 2vw;
+}
+.grid-recepis-sub-image-retroqueen{
+  background-image: url("../images/RetroQueen.jpg");
+  background-size: cover;
+}
+.grid-recepis-sub-image-wonderwoman{
+  background-image: url("../images/WonderWoman.jpg");
+  background-size: cover;
+}
+.grid-recepis-sub-image-skinnybitch {
+  background-image: url("../images/SkinnyBitch.jpg");
+  background-size: cover;
+}
+.grid-recepis-sub-image-clearcucumbersplash {
+  background-image: url("../images/ClearCucumberSplash.jpg");
+  background-size: cover;
+}
+.grid-recepis-sub-image-bloodysunset{
+  background-image: url("../images/BloodySunset.jpg");
+  background-size: cover;
+}
+.grid-recepis-sub-image-blueberrybang {
+  background-image: url("../images/BlueberryBang.jpg");
+  background-size: cover;
+}
+@media (max-width: 1000px) {
+  .grid-recepis-sub-container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 500px;
+ }
+}
