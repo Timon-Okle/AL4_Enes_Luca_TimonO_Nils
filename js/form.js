@@ -90,7 +90,6 @@ const onClickSubmit = async () => {
       email: emailField.value,
       firstname: firstnameField. value,
       lastname: lastnameField. value,
-      email: emailField. value,
       phone: phoneField. value,
       country: countryField.value,
       favoritedrink: favoritedrinkField.value,
