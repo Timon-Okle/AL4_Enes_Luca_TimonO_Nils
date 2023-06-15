@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Drinkable | Promotion</title>
+      <link rel="icon" href="./images/Vibe.png" type="image/x-icon">
+      <link rel="stylesheet" href="./css/common.css">
+      <link rel="stylesheet" href="./css/game.css">
+      <link rel="stylesheet" href="./css/promotion.css">
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700;800&display=swap" rel="stylesheet">
+   </head>
+   <body class="webpage">
+      <div class="grid-nav-container">
+         <div class="grid-nav grid-nav-logo">
+            <a href="./index.html">
+            <img src="./images/Vibe.png">
+            </a>
+         </div>
+         <div class="grid-nav grid-nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./recepis.html">Recepis</a>
+            <a href="./about.html">About</a>
+            <button class="classic-button" onclick="window.location.href='./promotion.html'">Win Now</button>
+         </div>
+      </div>
+      <div class="grid-playnow-container">
+         <div class="grid-nav grid-nav-playnow">
+            <a href="#">Play Now</a>
+         </div>
+      </div>
+      <div class="content"></div>
+      </div>
+      <div class="grid-container-index">
+         <div class="grid-item-box1">
+            <div id="game-container">
+               <div class="game-info">
+                  Reach 100 points to unlock the form.
+               </div>
+               <div id="form-lock-1" class="locked-1">
+                  <img src="./images/padlock-1.png" alt="Padlock">
+                  <p>Form currently locked</p>
+               </div>
+               <div id="game-end" class="hidden">
+                  <div id="game-winner" class="hidden">
+                     <div class="unlocked">
+                        <img src="./images/unlock.png" alt="unlocked">
+                        <p>Congratulations you have unlocked the form</p>
+                        <div class="fillnow">
+                           <a href="#box4">Fill form</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="grid-item-box2">
+            <div id="game">
+               <div id="game-start">
+                  <div class="startScreenText">
+                     <div class="replay">
+                        <img src="./images/replay.png" alt="Replay Button">
+                     </div>
+                     Click to start
+                  </div>
+               </div>
+               <div id="game-background"></div>
+               <div id="game-dino"></div>
+               <div id="game-rock"></div>
+               <div id="game-score">0</div>
+            </div>
+         </div>
+         <div class="grid-item-box3">
+            <div class="textbox3">
+               <h1>Win Now!</h1>
+               <p>If  have achieved enough points in the endless runner game. You can fill out the form to win amazing prizes.</p>
+            </div>
+         </div>
+         <div class="grid-item-box4" id="box4">
+            <div id="form-lock" class="locked">
+               <img src="./images/padlock.png" alt="Padlock">
+               <p>Form currently locked</p>
+            </div>
+            <div id="formContainer">
+               <div id="game-winner-form" class="hidden">
+                  <p>Fill out the form for a chance to win amazing prizes!</p>
+                  <form>
+                     <input type="text" id="firstname" placeholder="*First Name*" required>
+                     <input type="text" id="lastname" placeholder="*Last Name*" required>
+                     <input type="email" id="email" placeholder="*Email*" required>
+                     <input type="tel" id="phone" placeholder="Phone Number">
+                     <input type="text" id="country" placeholder="Country">
+                     <select id="favoritedrink" required>
+                       <option value="">Select your favorite cocktail</option>
+                       <option value="RetroQueen">RetroQueen</option>
+                       <option value="WonderWoman">WonderWoman</option>
+                       <option value="SkinnyBitch">SkinnyBitch</option>
+                       <option value="CucumberSplash">CucumberSplash</option>
+                       <option value="BloodySunset">BloodySunset</option>
+                       <option value="BlueberryBang">BlueberryBang</option>
+                     </select>
+                     <div></div>
+                     <input type="submit" id="submit" value="Enter Now">
+                   </form>
+                   
+               </div>
+            </div>
+            <div id="thankYouContainer" class="hidden">
+               Thank you for filling it out.
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+        <div class="footer">
+         <div class="grid-footer-container">
+       
+         <div class="grid-footer-item2">
+             <p>We are pleased that you have found your way to us. This website was created as part of a school project and serves to present you with information about our topic.</p>
+         </div>
+         <div class="grid-footer-item3">
+             <p>Please note that this website was created solely for educational purposes. We do not assume any liability for the accuracy or completeness of the provided information.</p>
+         </div>
+         <div class="grid-footer-item4">
+             <p>If you like it here, you will probably also like our social media. Take a look at it!</p>
+             <div class="social-icon">
+               <a href="https://www.instagram.com/" target="_blank">
+                   <img src="./images/instagram.png" alt="Instagram">
+               </a>
+               <a href="https://www.facebook.com/" target="_blank">
+                   <img src="./images/facebook.png" alt="Facebook">
+               </a>
+               <a href="https://twitter.com/" target="_blank">
+                   <img src="./images/twitter.png" alt="Twitter">
+               </a>
+           </div>
+           
+         </div>
+   
+         
+         </div>
+         <div class="grid-rightsreserved-container">
+             <div class="grid-nav-rightsreserved">
+                <a href="./about.html">© 2023 Drinkable - Cocktails
+                 should be kept in mind. | All rights reserved.</a>
+             </div>
+      <script src="./js/databaseClient.js"></script>
+      <script src="./js/form.js"></script>
+      <script src="./js/game.js"></script>
+   </body>
+</html>
